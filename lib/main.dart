@@ -9,6 +9,7 @@ void main() {
   );
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -28,14 +29,22 @@ class MyApp extends StatelessWidget {
             ),
           backgroundColor: Colors.blue,
         ),
-        body: const Column(
-          children: [
-            TweetTitle(),
-            TweetTitle(),
-            TweetTitle(),
-            TweetTitle(),
-            TweetTitle(),
-          ],
+        body: const SingleChildScrollView(
+          child: Column(
+              children: [
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+                TweetTitle(),
+              ],
+            ),
         ),
       ),
     );
